@@ -60,6 +60,7 @@ void sendData(char* s, const char* ip){
         write(sock, buf, 3);
     }
     write(sock, "\n", 1);
+    write(sock, "\n", 1);
     close(sock);
 }
 
